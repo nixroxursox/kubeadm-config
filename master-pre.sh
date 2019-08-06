@@ -34,4 +34,4 @@ else
 echo "Environment driver configured"
 fi;
 #reboot vm
-reboot
+reboot -f
