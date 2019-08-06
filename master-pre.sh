@@ -34,4 +34,4 @@ else
 echo "Environment driver configured"
 fi;
 #reboot vm
-reboot -f
+shutdown --reboot +1 "System is going down for reboot in 1 minute"
