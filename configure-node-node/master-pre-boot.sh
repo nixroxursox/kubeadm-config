@@ -31,8 +31,7 @@ if [ ! $(cat /etc/systemd/system/kubelet.service.d/10-kubeadm.conf | grep "Envir
 then
 echo "Environment="cgroup-driver=systemd/cgroup-driver=cgroupfs""  >> /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
 else
-echo "Environment driver already configured"
+echo "Environment driver configured"
 fi;
 #reboot vm
-echo "Rebooting the VM !"
 reboot
