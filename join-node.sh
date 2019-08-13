@@ -2,6 +2,7 @@ cd ./kubeadm-config/
 
 token=`cat token_create.txt`
 
+#to reset the kubeadm if any cluster running
 sudo kubeadm reset -f
 
 sudo `echo $token`
