@@ -72,7 +72,7 @@ echo -e "\n-------------------------------------\n"
 
 echo -e "All steps completed sucessfully now rebooting the server\n"
 
-shutdown --reboot +1 "System is going down for reboot in 1 minute"
+shutdown --reboot now
 
 
 else
