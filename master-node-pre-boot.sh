@@ -51,7 +51,7 @@ then
 echo -e "\n-------------------------------------\n"
 echo -e "Installing the kubelet,kubeadm,kubectl\n"
 
-apt-get install -y kubelet=1.14.0-00 kubeadm=1.14.0-00 kubectl=1.14.0-00
+apt-get install -y kubelet kubeadm kubectl
 
 
 if [[ `echo $? -e 0` ]]
