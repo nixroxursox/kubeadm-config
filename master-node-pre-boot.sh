@@ -1,6 +1,6 @@
 #!/bin/bash
 
-u_name=`who | tr -s " "|cut -d" " -f1`
+u_name=`who | tr -s " "|cut -d" " -f1 | uniq`
 
 if [[ `sudo -l -U $u_name` && `id -u` -eq 0 ]];
 then
